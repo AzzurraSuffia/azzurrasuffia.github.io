@@ -1,37 +1,339 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
-  <title>Azzurra Suffia</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <div class="base_block" style="background-color: #f5bb3d; width: 45%;">
-      <div class="base_block" style="background-color: #ffeec8; width: 90%;">
-        <div class="text_block">
-          <p style="font-family: 'Pixelify Sans', monospace; color:#f5bb3d; font-size: large; margin-top: 0px;"># PLAYER AZZURRA SUFFIA </p>
-        </div>
-        <div class="container" style="align-items: center;">
-          <img src="images/pixel_cookie.png" class="pixel-object">
-          <p style="font-family: 'Pixelify Sans', monospace; color:#3b3936;"> Work in progress </p>
-          <img src="images/pixel_cookie.png" class="pixel-object">
+
+<!-- HEADER CARD -->
+<div class="header-wrap">
+  <div class="section-card header-card">
+    <!-- title bar -->
+    <div class="header-title-bar">
+      <svg class="picon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="image-rendering:pixelated" aria-hidden="true">
+        <g class="icon-star">
+          <rect x="7" y="1" width="2" height="3" fill="#e2b96f"/>
+          <rect x="4" y="4" width="8" height="1" fill="#e2b96f"/>
+          <rect x="3" y="5" width="10" height="2" fill="#e2b96f"/>
+          <rect x="1" y="7" width="14" height="2" fill="#e2b96f"/>
+          <rect x="2" y="9" width="5" height="2" fill="#e2b96f"/>
+          <rect x="9" y="9" width="5" height="2" fill="#e2b96f"/>
+          <rect x="1" y="11" width="4" height="2" fill="#e2b96f"/>
+          <rect x="11" y="11" width="4" height="2" fill="#e2b96f"/>
+          <rect x="1" y="13" width="3" height="2" fill="#e2b96f"/>
+          <rect x="12" y="13" width="3" height="2" fill="#e2b96f"/>
+        </g>
+      </svg>
+      <h1>Character Profile</h1>
+    </div>
+
+    <!-- photo + info -->
+    <div class="header-body">
+      <!-- photo column -->
+      <div class="photo-col">
+        <div class="photo-placeholder">
+          <img class="candidate-photo" src="images/profile_pic.jpg" alt="Azzurra Suffia">
         </div>
       </div>
-    </div>
-    <div class="base_block" style="background-color: #f5bb3d; width: 45%;">
-      <div class="base_block" style="background-color: #ffeec8; width: 90%;">
-        <div class="text_block">
-          <p style="font-family: 'Pixelify Sans', monospace; color:#f5bb3d; font-size: large; margin-top: 0px;">OVERVIEW </p>
+
+      <!-- info column -->
+      <div class="info-col">
+        <div>
+          <span class="class-tag">&#x25B6; CLASS: COMPUTER ENGINEERING STUDENT &nbsp;/&nbsp; LVL 5</span>
+          <p class="hero-name">Azzurra Suffia</p>
+          <p class="tagline">A seasoned adventurer with expertise in crafting digital worlds, slaying bugs, and shipping legendary software.</p>
         </div>
-        <div class="container" style="align-items: center;">
-          <img src="images/pixel_heart.png" class="pixel-object">
-          <p style="font-family: 'Pixelify Sans', monospace; color:#3b3936;"> Still a work in progress </p>
-          <img src="images/pixel_heart.png" class="pixel-object">
+        <!-- stat bars inside info col -->
+        <div class="stats-strip" style="margin: 0 -1.6rem; padding: 1rem 1.6rem;">
+          <div class="stat-bar-wrap">
+            <span class="stat-label">HP</span>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:88%;background:#4caf7d"></div></div>
+            <span class="stat-val" style="color:#4caf7d">23/99</span>
+          </div>
+          <div class="stat-bar-wrap">
+            <span class="stat-label">MP</span>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:72%;background:#8b5cf6"></div></div>
+            <span class="stat-val" style="color:#8b5cf6">??/100</span>
+          </div>
+          <div class="stat-bar-wrap">
+            <span class="stat-label">XP</span>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:61%;background:#e2b96f"></div></div>
+            <span class="stat-val" style="color:#e2b96f">??/10k</span>
+          </div>
+          <div class="stat-bar-wrap">
+            <span class="stat-label">STM</span>
+            <div class="stat-bar"><div class="stat-bar-fill" style="width:95%;background:#c47eb5"></div></div>
+            <span class="stat-val" style="color:#c47eb5">??/100</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+<!-- MAIN -->
+<main>
+  <div class="two-col">
+    <div class="col-main">
+
+      <!-- EXPERIENCE -->
+      <section class="section-card">
+        <div class="section-header">
+          <svg class="picon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="image-rendering:pixelated" aria-hidden="true">
+            <g class="icon-sword">
+              <rect x="7" y="1" width="2" height="10" fill="#e2b96f"/>
+              <rect x="6" y="1" width="1" height="2" fill="#c9a050"/>
+              <rect x="9" y="1" width="1" height="2" fill="#c9a050"/>
+              <rect x="4" y="6" width="8" height="2" fill="#c9a050"/>
+              <rect x="6" y="11" width="4" height="1" fill="#c9a050"/>
+              <rect x="7" y="12" width="2" height="3" fill="#9a7840"/>
+              <rect class="icon-sword-gleam" x="7" y="1" width="2" height="1" fill="#fff" opacity="0"/>
+            </g>
+          </svg>
+          <h2>Battle Experience</h2>
+        </div>
+        <div class="section-body">
+          <div class="timeline">
+            <div>
+              <div class="tl-title">Work in progress</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="section-card">
+        <div class="section-header">
+          <svg class="picon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="image-rendering:pixelated" aria-hidden="true">
+            <rect x="7" y="3" width="2" height="10" fill="#7b5ea7"/>
+            <rect x="1" y="3" width="6" height="10" fill="#a78bfa"/>
+            <rect x="9" y="3" width="6" height="10" fill="#a78bfa"/>
+            <g class="icon-book-page-l"><rect x="2" y="5" width="4" height="1" fill="#fff" opacity="0.6"/><rect x="2" y="7" width="4" height="1" fill="#fff" opacity="0.6"/><rect x="2" y="9" width="3" height="1" fill="#fff" opacity="0.6"/></g>
+            <g class="icon-book-page-r"><rect x="10" y="5" width="4" height="1" fill="#fff" opacity="0.6"/><rect x="10" y="7" width="4" height="1" fill="#fff" opacity="0.6"/><rect x="10" y="9" width="3" height="1" fill="#fff" opacity="0.6"/></g>
+          </svg>
+          <h2>Skill Scrolls</h2>
+        </div>
+        <div class="section-body">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="tl-line"><div class="tl-dot" style="background:var(--accent2)"></div><div class="tl-connector"></div></div>
+              <div>
+                <div class="tl-title">M.Sc. Computer Engineering</div>
+                <div class="tl-sub"><span>University of Genoa</span><span class="tl-date">Sep 2021 – Sep 2024</span></div>
+                <p class="tl-desc">Current GPA: 4.0/4.0. Artificial Intelligence track, taught in English, with coursework in Operation Research, Machine Learning and Data Analysis, Logic and Automated Reasoning, Software Engineering, Human Computer Interaction, Advanced Data Management, Computer Security, and Trustworthy AI. </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="tl-line"><div class="tl-dot" style="background:var(--accent2)"></div><div class="tl-connector"></div></div>
+              <div>
+                <div class="tl-title">B.Sc. Computer Engineering</div>
+                <div class="tl-sub"><span>University of Genoa</span><span class="tl-date">Sep 2024 – Oct 2026</span></div>
+                <p class="tl-desc">Final grade: 110/110 with honors. Degree taught in Italian, providing a strong theoretical and practical foundation in Physics, Mathematics, Automation, and Computer Science, with a thesis focused on Large Language Models.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUEST LOG -->
+      <section class="section-card">
+        <div class="section-header">
+          <svg class="picon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="image-rendering:pixelated" aria-hidden="true">
+            <g class="icon-scroll-body">
+              <rect x="3" y="2" width="10" height="12" fill="#e2b96f"/>
+              <rect x="2" y="2" width="2" height="12" fill="#c9a050"/>
+              <rect x="12" y="2" width="2" height="12" fill="#c9a050"/>
+              <rect x="2" y="2" width="2" height="2" fill="#9a7840"/>
+              <rect x="12" y="2" width="2" height="2" fill="#9a7840"/>
+              <rect x="2" y="12" width="2" height="2" fill="#9a7840"/>
+              <rect x="12" y="12" width="2" height="2" fill="#9a7840"/>
+            </g>
+            <g class="icon-scroll-lines"><rect x="5" y="5" width="6" height="1" fill="#9a7840"/><rect x="5" y="7" width="6" height="1" fill="#9a7840"/><rect x="5" y="9" width="4" height="1" fill="#9a7840"/></g>
+          </svg>
+          <h2>Completed Quests</h2>
+        </div>
+        <div class="section-body">
+          <div class="tl-title">Work in progress</div>
+        </div>
+      </section>
+
+    </div><!-- /col-main -->
+
+    <!-- RIGHT COLUMN -->
+    <div class="col-side">
+
+      <!-- ATTRIBUTES -->
+      <section class="section-card">
+        <div class="section-header">
+          <svg class="picon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="image-rendering:pixelated" aria-hidden="true">
+            <g class="icon-gem-body"><rect x="5" y="1" width="6" height="1" fill="#a78bfa"/><rect x="3" y="2" width="10" height="1" fill="#a78bfa"/><rect x="2" y="3" width="12" height="1" fill="#c4b5fd"/></g>
+            <rect class="icon-gem-face" x="2" y="4" width="12" height="5" fill="#a78bfa"/>
+            <g class="icon-gem-body"><rect x="3" y="9" width="10" height="1" fill="#7c3aed"/><rect x="4" y="10" width="8" height="1" fill="#7c3aed"/><rect x="5" y="11" width="6" height="1" fill="#6d28d9"/><rect x="6" y="12" width="4" height="1" fill="#6d28d9"/><rect x="7" y="13" width="2" height="1" fill="#6d28d9"/></g>
+            <rect class="icon-gem-shine" x="5" y="5" width="2" height="2" fill="#ede9fe" opacity="0.7"/>
+          </svg>
+          <h2>Attributes</h2>
+        </div>
+        <div class="section-body">
+          <div class="tl-title">Work in progress</div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section-card">
+        <div class="section-header">
+          <svg class="picon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="image-rendering:pixelated" aria-hidden="true">
+            <rect x="6" y="1" width="4" height="1" fill="#888"/>
+            <rect x="5" y="2" width="6" height="2" fill="#aaa"/>
+            <rect x="4" y="4" width="8" height="1" fill="#8b5cf6"/>
+            <rect class="icon-potion-body" x="3" y="5" width="10" height="6" fill="#8b5cf6"/>
+            <rect x="4" y="11" width="8" height="2" fill="#7c3aed"/>
+            <rect x="5" y="13" width="6" height="1" fill="#7c3aed"/>
+            <rect x="6" y="14" width="4" height="1" fill="#6d28d9"/>
+            <rect class="icon-bubble-a" x="6" y="7" width="2" height="2" fill="#c4b5fd" opacity="0.8"/>
+            <rect class="icon-bubble-b" x="9" y="9" width="2" height="2" fill="#c4b5fd" opacity="0.6"/>
+          </svg>
+          <h2>Magic Skills</h2>
+        </div>
+        <div class="section-body">
+          <div class="tl-title">Work in progress</div>
+        </div>
+      </section>
+
+      <!-- EQUIPMENT -->
+      <section class="section-card">
+        <div class="section-header">
+          <svg class="picon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="image-rendering:pixelated" aria-hidden="true">
+            <g class="icon-chest-lid"><rect x="2" y="3" width="12" height="3" fill="#9a7840"/><rect x="3" y="4" width="10" height="2" fill="#c9a050"/></g>
+            <rect x="2" y="6" width="12" height="7" fill="#9a7840"/>
+            <rect x="3" y="7" width="10" height="5" fill="#c9a050"/>
+            <rect x="6" y="8" width="4" height="2" fill="#9a7840"/>
+            <rect x="7" y="7" width="2" height="4" fill="#9a7840"/>
+            <rect class="icon-chest-gleam" x="2" y="8" width="2" height="2" fill="#e2c070"/>
+            <rect class="icon-chest-gleam" x="12" y="8" width="2" height="2" fill="#e2c070"/>
+            <rect x="1" y="3" width="1" height="10" fill="#7a5830"/>
+            <rect x="14" y="3" width="1" height="10" fill="#7a5830"/>
+          </svg>
+          <h2>Equipment</h2>
+        </div>
+        <div class="section-body">
+          <div class="equip-grid">
+            <span class="equip-tag"><span class="etag-dot"></span>Python</span>
+            <span class="equip-tag"><span class="etag-dot"></span>C++</span>
+            <span class="equip-tag"><span class="etag-dot"></span>C</span>
+            <span class="equip-tag"><span class="etag-dot"></span>MATLAB</span>
+            <span class="equip-tag"><span class="etag-dot"></span>SQL</span>
+            <span class="equip-tag"><span class="etag-dot"></span>MongoDB</span>
+            <span class="equip-tag"><span class="etag-dot"></span>Cassandra</span>
+            <span class="equip-tag"><span class="etag-dot"></span>Neo4j</span>
+            <span class="equip-tag"><span class="etag-dot"></span>PyTorch</span>
+            <span class="equip-tag"><span class="etag-dot"></span>Scikit-learn</span>
+            <span class="equip-tag"><span class="etag-dot"></span>Pandas</span>
+            <span class="equip-tag"><span class="etag-dot"></span>Numpy</span>
+            <span class="equip-tag"><span class="etag-dot"></span>HTML</span>
+            <span class="equip-tag"><span class="etag-dot"></span>CSS</span>
+            <span class="equip-tag"><span class="etag-dot"></span>JavaScript</span>
+            <span class="equip-tag"><span class="etag-dot"></span>Kotlin</span>
+            <span class="equip-tag"><span class="etag-dot"></span>Google ADK</span>
+            <span class="equip-tag"><span class="etag-dot"></span>Google Agent Platform</span>
+            <span class="equip-tag"><span class="etag-dot"></span>Unreal Engine 5</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- LANGUAGES -->
+      <section class="section-card">
+          <div class="section-header">
+            <svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="image-rendering:pixelated;flex-shrink:0" aria-hidden="true">
+              <rect x="1" y="2" width="14" height="9" fill="#4caf7d"/>
+              <rect x="2" y="3" width="12" height="7" fill="#6ac98e"/>
+              <rect x="3" y="11" width="2" height="2" fill="#4caf7d"/>
+              <rect x="5" y="12" width="2" height="1" fill="#4caf7d"/>
+              <rect class="icon-dot-1" x="4" y="6" width="2" height="1" fill="#fff"/>
+              <rect class="icon-dot-2" x="7" y="6" width="2" height="1" fill="#fff"/>
+              <rect class="icon-dot-3" x="10" y="6" width="2" height="1" fill="#fff"/>
+            </svg>
+            <h2>Languages</h2>
+          </div>
+          <div class="lang-body">
+            <div class="lang-item">
+              <span class="lang-name">Italian</span>
+              <span class="lang-level">NATIVE</span>
+            </div>
+            <div class="lang-item">
+              <span class="lang-name">English</span>
+              <span class="lang-level">FLUENT</span>
+            </div>
+            <div class="lang-item">
+              <span class="lang-name">French</span>
+              <span class="lang-level">BASIC</span>
+            </div>
+
+            <div style="border-top: 1px solid #e2ddd6; margin: 2px 0;"></div>
+
+            <div class="lang-item-ea">
+              <span class="lang-name-ea">Japanese</span>
+              <div style="display:flex; align-items:center; gap:6px;">
+                <span class="ea-badge">
+                  <span class="ea-dot"></span>EARLY ACCESS
+                </span>
+                <span class="lock-icon">&#x1F512;</span>
+              </div>
+            </div>
+            <p style="font-family:'Press Start 2P',monospace; font-size:6px; color:#7c3aed; margin: 0 0 2px; line-height:1.9; opacity:0.8;">LEARNER · SKILL UNLOCKING...</p>
+          </div>
+      </section>
+
+    </div><!-- /col-side -->
+  </div><!-- /two-col -->
+
+  <!-- CONTACT -->
+  <section class="section-card choose-card">
+    <div class="section-header">
+      <svg class="picon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="image-rendering:pixelated" aria-hidden="true">
+        <g class="icon-star">
+          <rect x="7" y="1" width="2" height="3" fill="#1a1a2e"/>
+          <rect x="4" y="4" width="8" height="1" fill="#1a1a2e"/>
+          <rect x="3" y="5" width="10" height="2" fill="#1a1a2e"/>
+          <rect x="1" y="7" width="14" height="2" fill="#1a1a2e"/>
+          <rect x="2" y="9" width="5" height="2" fill="#1a1a2e"/>
+          <rect x="9" y="9" width="5" height="2" fill="#1a1a2e"/>
+          <rect x="1" y="11" width="4" height="2" fill="#1a1a2e"/>
+          <rect x="11" y="11" width="4" height="2" fill="#1a1a2e"/>
+          <rect x="1" y="13" width="3" height="2" fill="#1a1a2e"/>
+          <rect x="12" y="13" width="3" height="2" fill="#1a1a2e"/>
+        </g>
+      </svg>
+      <h2>— Choose this Character —</h2>
+    </div>
+    <div class="choose-body">
+      <a class="contact-item" href="mailto:azzurra.suffia@gmail.com">
+        <span class="contact-icon">✉</span>
+        <span><span class="contact-label">EMAIL</span><span class="contact-val">azzurra.suffia@gmail.com</span></span>
+      </a>
+      <a class="contact-item" href="https://www.linkedin.com/in/azzurra-suffia/" target="_blank" rel="noopener">
+        <span class="contact-icon">in</span>
+        <span><span class="contact-label">LINKEDIN</span><span class="contact-val">/in/azzurra-suffia/</span></span>
+      </a>
+      <a class="contact-item" href="https://github.com/AzzurraSuffia" target="_blank" rel="noopener">
+        <span class="contact-icon" style="font-family:monospace;font-size:18px">{}</span>
+        <span><span class="contact-label">GITHUB</span><span class="contact-val">github.com/AzzurraSuffia</span></span>
+      </a>
+      <a class="contact-item" href="https://azzurrasuffia.github.io/" target="_blank" rel="noopener">
+        <span class="contact-icon">&#x25A0;</span>
+        <span><span class="contact-label">WEBSITE</span><span class="contact-val">azzurrasuffia.github.io</span></span>
+      </a>
+    </div>
+    <div class="cta-row">
+      <a class="cta-btn" href="mailto:azzurra.suffia@gmail.com">▶ &nbsp;START NEW GAME WITH THIS CHARACTER</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p class="footer-txt">© 2026 AZZURRA SUFFIA · MADE WITH LOVE AND TOO MUCH COFFEE &nbsp;<span class="blink">_</span></p>
+</footer>
 </body>
 </html>
