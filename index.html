@@ -13,19 +13,12 @@
   <div class="section-card header-card">
     <!-- title bar -->
     <div class="header-title-bar">
-      <svg class="picon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="image-rendering:pixelated" aria-hidden="true">
-        <g class="icon-star">
-          <rect x="7" y="1" width="2" height="3" fill="#e2b96f"/>
-          <rect x="4" y="4" width="8" height="1" fill="#e2b96f"/>
-          <rect x="3" y="5" width="10" height="2" fill="#e2b96f"/>
-          <rect x="1" y="7" width="14" height="2" fill="#e2b96f"/>
-          <rect x="2" y="9" width="5" height="2" fill="#e2b96f"/>
-          <rect x="9" y="9" width="5" height="2" fill="#e2b96f"/>
-          <rect x="1" y="11" width="4" height="2" fill="#e2b96f"/>
-          <rect x="11" y="11" width="4" height="2" fill="#e2b96f"/>
-          <rect x="1" y="13" width="3" height="2" fill="#e2b96f"/>
-          <rect x="12" y="13" width="3" height="2" fill="#e2b96f"/>
-        </g>
+    <svg class="picon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="image-rendering:pixelated" aria-hidden="true">
+      <g>
+        <circle cx="8" cy="8" r="6.5" fill="none" stroke="#e2b96f" stroke-width="1"/>
+        <rect x="7" y="4" width="2" height="2" fill="#e2b96f"/>
+        <rect x="7" y="7" width="2" height="5" fill="#e2b96f"/>
+      </g>
       </svg>
       <h1>Character Profile</h1>
     </div>
@@ -151,6 +144,19 @@
               <rect x="2" y="12" width="2" height="2" fill="#9a7840"/>
               <rect x="12" y="12" width="2" height="2" fill="#9a7840"/>
             </g>
+            <g class="icon-scroll-check">
+              <rect x="10" y="9" width="4" height="1" fill="#4caf7d"/>
+              <rect x="9" y="10" width="6" height="1" fill="#4caf7d"/>
+              <rect x="9" y="11" width="6" height="1" fill="#4caf7d"/>
+              <rect x="9" y="12" width="6" height="1" fill="#4caf7d"/>
+              <rect x="9" y="13" width="6" height="1" fill="#4caf7d"/>
+              <rect x="10" y="14" width="4" height="1" fill="#4caf7d"/>
+              <rect class="icon-check-px-1" x="10" y="12" width="1" height="1" fill="#ffffff"/>
+              <rect class="icon-check-px-2" x="11" y="13" width="1" height="1" fill="#ffffff"/>
+              <rect class="icon-check-px-3" x="12" y="12" width="1" height="1" fill="#ffffff"/>
+              <rect class="icon-check-px-4" x="13" y="11" width="1" height="1" fill="#ffffff"/>
+              <rect class="icon-check-px-5" x="14" y="10" width="1" height="1" fill="#ffffff"/>
+            </g>
             <g class="icon-scroll-lines"><rect x="5" y="5" width="6" height="1" fill="#9a7840"/><rect x="5" y="7" width="6" height="1" fill="#9a7840"/><rect x="5" y="9" width="4" height="1" fill="#9a7840"/></g>
           </svg>
           <h2>Completed Quests</h2>
@@ -160,7 +166,7 @@
         </div>
       </section>
 
-    </div><!-- /col-main -->
+    </div>
 
     <!-- RIGHT COLUMN -->
     <div class="col-side">
@@ -169,8 +175,19 @@
       <section class="section-card">
         <div class="section-header">
           <svg class="picon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="image-rendering:pixelated" aria-hidden="true">
+            <defs>
+              <clipPath id="gemFaceClip">
+                <rect x="2" y="4" width="12" height="5"/>
+              </clipPath>
+              <linearGradient id="gemShimmerGradient" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#a78bfa" stop-opacity="0"/>
+                <stop offset="50%" stop-color="#ede9fe" stop-opacity="0.65"/>
+                <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
             <g class="icon-gem-body"><rect x="5" y="1" width="6" height="1" fill="#a78bfa"/><rect x="3" y="2" width="10" height="1" fill="#a78bfa"/><rect x="2" y="3" width="12" height="1" fill="#c4b5fd"/></g>
             <rect class="icon-gem-face" x="2" y="4" width="12" height="5" fill="#a78bfa"/>
+            <rect class="icon-gem-face-shimmer" x="-10" y="4" width="7" height="5" fill="url(#gemShimmerGradient)" clip-path="url(#gemFaceClip)"/>
             <g class="icon-gem-body"><rect x="3" y="9" width="10" height="1" fill="#7c3aed"/><rect x="4" y="10" width="8" height="1" fill="#7c3aed"/><rect x="5" y="11" width="6" height="1" fill="#6d28d9"/><rect x="6" y="12" width="4" height="1" fill="#6d28d9"/><rect x="7" y="13" width="2" height="1" fill="#6d28d9"/></g>
             <rect class="icon-gem-shine" x="5" y="5" width="2" height="2" fill="#ede9fe" opacity="0.7"/>
           </svg>
@@ -292,21 +309,7 @@
   <!-- CONTACT -->
   <section class="section-card choose-card">
     <div class="section-header">
-      <svg class="picon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="image-rendering:pixelated" aria-hidden="true">
-        <g class="icon-star">
-          <rect x="7" y="1" width="2" height="3" fill="#1a1a2e"/>
-          <rect x="4" y="4" width="8" height="1" fill="#1a1a2e"/>
-          <rect x="3" y="5" width="10" height="2" fill="#1a1a2e"/>
-          <rect x="1" y="7" width="14" height="2" fill="#1a1a2e"/>
-          <rect x="2" y="9" width="5" height="2" fill="#1a1a2e"/>
-          <rect x="9" y="9" width="5" height="2" fill="#1a1a2e"/>
-          <rect x="1" y="11" width="4" height="2" fill="#1a1a2e"/>
-          <rect x="11" y="11" width="4" height="2" fill="#1a1a2e"/>
-          <rect x="1" y="13" width="3" height="2" fill="#1a1a2e"/>
-          <rect x="12" y="13" width="3" height="2" fill="#1a1a2e"/>
-        </g>
-      </svg>
-      <h2>— Choose this Character —</h2>
+      <h2> Choose this Character </h2>
     </div>
     <div class="choose-body">
       <a class="contact-item" href="mailto:azzurra.suffia@gmail.com">
@@ -327,7 +330,7 @@
       </a>
     </div>
     <div class="cta-row">
-      <a class="cta-btn" href="mailto:azzurra.suffia@gmail.com">▶ &nbsp;SELECT THIS CHARACTER</a>
+      <a class="cta-btn" href="mailto:azzurra.suffia@gmail.com">▶ &nbsp;SELECT</a>
     </div>
   </section>
 </main>

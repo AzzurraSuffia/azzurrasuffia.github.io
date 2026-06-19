@@ -79,18 +79,6 @@
     text-align: center; line-height: 2;
   }
 
-  /* pixel avatar badge */
-  .pixel-avatar-badge {
-    position: absolute;
-    bottom: 8px; right: 8px;
-    width: 44px; height: 44px;
-    background: var(--pixel-mid);
-    border: 3px solid var(--accent);
-    display: flex; align-items: center; justify-content: center;
-    image-rendering: pixelated;
-  }
-  .pixel-avatar-badge svg { width: 34px; height: 34px; image-rendering: pixelated; }
-
   /* info column */
   .info-col {
     padding: 1.4rem 1.6rem 0;
@@ -218,8 +206,12 @@
   
   /* equipment */
   .equip-grid { display: flex; flex-wrap: wrap; gap: 6px; }
-  .equip-tag { font-size: 11px; font-weight: 500; background: var(--bg); border: 1.5px solid var(--pixel); padding: 4px 10px; border-radius: var(--radius); display: flex; align-items: center; gap: 5px; }
+  .equip-tag { font-size: 11px; font-weight: 500; background: var(--bg); border: 1.5px solid var(--pixel); padding: 4px 10px; border-radius: var(--radius); display: flex; align-items: center; gap: 5px; transition: background-color 0.2s ease, border-color 0.2s ease; cursor: default; }
   .equip-tag .etag-dot { width: 5px; height: 5px; background: var(--accent2); flex-shrink: 0; }
+  .equip-tag:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+  }
 
   /* quests */
   .quest-list { display: flex; flex-direction: column; gap: 1rem; }
@@ -273,16 +265,8 @@
   @keyframes page-flip-l { 0%,100%{transform:scaleX(1)}45%,55%{transform:scaleX(0)} }
   .icon-book-page-r { animation:page-slide 2.8s ease-in-out infinite; }
   .icon-book-page-l { animation:page-flip-l 2.8s ease-in-out infinite; transform-origin:7px 8px; }
-  @keyframes scroll-unroll { 0%,100%{transform:scaleY(1)}30%{transform:scaleY(0.7)}60%{transform:scaleY(1.08)}80%{transform:scaleY(0.96)} }
-  @keyframes scroll-ink { 0%,100%{opacity:0.6}50%{opacity:1} }
-  .icon-scroll-body { animation:scroll-unroll 3s ease-in-out infinite; transform-origin:8px 8px; }
-  .icon-scroll-lines { animation:scroll-ink 3s ease-in-out infinite; }
-  @keyframes gem-pulse { 0%,100%{opacity:1}50%{opacity:0.55} }
-  @keyframes gem-shine { 0%,100%{opacity:0.7;transform:translate(0,0)}50%{opacity:1;transform:translate(1px,-1px)} }
-  @keyframes gem-hue { 0%{fill:#c47eb5}25%{fill:#a78bfa}50%{fill:#e2b96f}75%{fill:#8b5cf6}100%{fill:#c47eb5} }
-  .icon-gem-body { animation:gem-pulse 2.2s ease-in-out infinite; }
-  .icon-gem-face { animation:gem-hue 4.4s linear infinite; }
-  .icon-gem-shine { animation:gem-shine 2.2s ease-in-out infinite; }
+  @keyframes gem-face-shimmer-sweep {  0% { x: -10; } 100% { x: 26; } }
+  .icon-gem-face-shimmer {  animation: gem-face-shimmer-sweep 2.2s ease-in-out infinite;  }
   @keyframes bubble-rise-a { 0%,100%{transform:translateY(0px);opacity:0.8}50%{transform:translateY(-3px);opacity:0.3} }
   @keyframes bubble-rise-b { 0%,100%{transform:translateY(0px);opacity:0.6}60%{transform:translateY(-4px);opacity:0.1} }
   @keyframes potion-shimmer { 0%,100%{fill:#8b5cf6}50%{fill:#a78bfa} }
@@ -292,6 +276,45 @@
   @keyframes chest-open { 0%,100%{transform:translateY(0px)}40%{transform:translateY(-3px)}60%{transform:translateY(-1px)} }
   @keyframes chest-gleam { 0%,100%{opacity:1}50%{opacity:0.4} }
   .icon-chest-lid { animation:chest-open 2.5s ease-in-out infinite; transform-origin:8px 3px; }
+  .icon-scroll-check rect[class^="icon-check-px"] {
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  @keyframes check-px-1 {
+    0%, 4%   { opacity: 0; transform: scale(0); }
+    10%      { opacity: 1; transform: scale(1.4); }
+    16%, 88% { opacity: 1; transform: scale(1); }
+    94%, 100%{ opacity: 0; transform: scale(0); }
+  }
+  @keyframes check-px-2 {
+    0%, 18%  { opacity: 0; transform: scale(0); }
+    24%      { opacity: 1; transform: scale(1.4); }
+    30%, 88% { opacity: 1; transform: scale(1); }
+    94%, 100%{ opacity: 0; transform: scale(0); }
+  }
+  @keyframes check-px-3 {
+    0%, 32%  { opacity: 0; transform: scale(0); }
+    38%      { opacity: 1; transform: scale(1.4); }
+    44%, 88% { opacity: 1; transform: scale(1); }
+    94%, 100%{ opacity: 0; transform: scale(0); }
+  }
+  @keyframes check-px-4 {
+    0%, 46%  { opacity: 0; transform: scale(0); }
+    52%      { opacity: 1; transform: scale(1.4); }
+    58%, 88% { opacity: 1; transform: scale(1); }
+    94%, 100%{ opacity: 0; transform: scale(0); }
+  }
+  @keyframes check-px-5 {
+    0%, 60%  { opacity: 0; transform: scale(0); }
+    66%      { opacity: 1; transform: scale(1.4); }
+    72%, 88% { opacity: 1; transform: scale(1); }
+    94%, 100%{ opacity: 0; transform: scale(0); }
+  }
+  .icon-check-px-1 { animation: check-px-1 1.2s ease-in-out infinite; }
+  .icon-check-px-2 { animation: check-px-2 1.2s ease-in-out infinite; }
+  .icon-check-px-3 { animation: check-px-3 1.2s ease-in-out infinite; }
+  .icon-check-px-4 { animation: check-px-4 1.2s ease-in-out infinite; }
+  .icon-check-px-5 { animation: check-px-5 1.2s ease-in-out infinite; }
   .icon-chest-gleam { animation:chest-gleam 2.5s ease-in-out infinite; }
   @keyframes icon-dot-pulse-1 { 0%,100%{opacity:0.25} 20%{opacity:1} }
   @keyframes icon-dot-pulse-2 { 0%,100%{opacity:0.25} 40%{opacity:1} }
@@ -299,8 +322,6 @@
   .icon-dot-1 { animation: icon-dot-pulse-1 1.4s ease-in-out infinite; }
   .icon-dot-2 { animation: icon-dot-pulse-2 1.4s ease-in-out infinite; }
   .icon-dot-3 { animation: icon-dot-pulse-3 1.4s ease-in-out infinite; }
-  @keyframes star-spin { 0%{transform:rotate(0deg) scale(1)}50%{transform:rotate(180deg) scale(1.15)}100%{transform:rotate(360deg) scale(1)} }
-  .icon-star { animation:star-spin 4s linear infinite; transform-origin:8px 8px; }
   @keyframes badge-shimmer { 0% { left: -100%; } 100% { left: 200%; } }
   .ea-dot {
     width: 5px; height: 5px; border-radius: 50%;
